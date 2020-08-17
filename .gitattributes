@@ -1,0 +1,4 @@
+/node_modules/ linguist-vendored=true
+/dist/*.html linguist-vendored=false
+/dist/js/*.js linguist-vendored=false
+/dist/css/*.css linguist-vendored=false

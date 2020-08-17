@@ -1,0 +1,12 @@
+// This is the main importer file, so every partials would be indexed properly
+
+@import "1-utils/variables";
+@import "1-utils/mixins";
+@import "1-utils/functions";
+@import "1-utils/placeholders";
+
+@import "2-vendors/normalize-nc";
+
+@import "3-base/resets";
+@import "3-base/general";
+@import "3-base/typography";
