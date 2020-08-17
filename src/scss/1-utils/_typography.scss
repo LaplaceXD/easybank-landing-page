@@ -1,0 +1,17 @@
+// variables
+$body-font-size: 18px;
+$font-family: "Public Sans", sans-serif;
+$font-weights: (
+    light: 300,
+    medium: 400,
+    bold: 700,
+);
+
+// mixins
+@mixin font-weight($size) {
+    @if map-has-key($font-weights, $size) {
+        font-weight: map-get($font-weights, $size);
+    } @else {
+        @error "There is no font-weight defined for #{$size} in $font-weights map";
+    }
+}

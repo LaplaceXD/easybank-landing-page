@@ -1,0 +1,45 @@
+// Variables
+$primary-color: hsl(233, 26%, 24%);
+$secondary-color: hsl(233, 8%, 62%);
+$accent-color: hsl(0, 0%, 100%);
+$hover-color: hsl(136, 65%, 51%);
+
+$background-pallete: (
+    card: (
+        default: hsl(0, 0%, 98%),
+    ),
+    section: (
+        light: hsl(220, 16%, 96%),
+        dark: hsl(233, 8%, 62%),
+    ),
+);
+
+$gradient-pallete: (
+    from: hsl(136, 65%, 51%) to: hsl(192, 70%, 51%),
+);
+
+// Mixins
+@mixin add-background($area, $color-type) {
+    @if map-has-key($background-pallete, $area) {
+        $color-pallete: map-get($background-pallete, $area);
+        @if map-has-key($color-pallete, $color-type) {
+            background-color: map-get($color-pallete, $color-type);
+        } @else {
+            @error "The color-pallete: #{$area} has no defined color for #{$color-type}.";
+        }
+    } @else {
+        @error "There is no background color defined for #{$area}.";
+    }
+}
+
+@mixin add-gradient($pallete, $direction: 45deg) {
+    @if variable-exists($pallete) {
+        @if (map-has-key($pallete, from)) and (map-has-key($pallete, to)) {
+            background: linear-gradient($direction, map-get($pallete, from), map-get($pallete, to));
+        } @else {
+            @error "#{$pallete} is not a two colored gradient-scheme, or keys are not named from and to.";
+        }
+    } @else {
+        @error "There is no gradient-scheme called #{$pallete}.";
+    }
+}

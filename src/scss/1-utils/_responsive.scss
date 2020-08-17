@@ -1,0 +1,17 @@
+// variables
+$screen-size: (
+    small: 375px,
+    medium: 700px,
+    large: 1280px,
+);
+
+// mixins
+@mixin breakpoint($size) {
+    @if (map-has-key($screen-size, $size)) {
+        @media screen and (min-width: map-get($screen-size, $size)) {
+            @content;
+        }
+    } @else {
+        @error "There is no screen size defined for #{$size}.";
+    }
+}
