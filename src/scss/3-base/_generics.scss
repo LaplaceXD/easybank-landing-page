@@ -1,0 +1,8 @@
+button {
+    @include font-weight(bold);
+    font-size: 0.9rem;
+    color: $accent-color;
+    @include add-gradient($gradient-pallete);
+    border-radius: 32px;
+    padding: 1em 2em;
+}
