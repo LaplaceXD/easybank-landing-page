@@ -1,0 +1,17 @@
+body {
+    @include add-background(section);
+}
+
+.bg {
+    &-landing {
+        background: url('../images/bg-intro-mobile.svg') no-repeat;
+    }
+
+    &-benefits {
+        @include add-background(section, secondary);
+    }
+
+    &-footer {
+        @include add-background(footer);
+    }
+}
