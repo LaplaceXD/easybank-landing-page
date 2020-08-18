@@ -1,0 +1,5 @@
+$transition-duration: 500ms;
+
+@mixin transition-ease($duration: $transition-duration, $delay: 0ms) {
+    transition: all $duration $delay ease;
+}
