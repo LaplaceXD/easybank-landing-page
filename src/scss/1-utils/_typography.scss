@@ -15,3 +15,13 @@ $font-weights: (
         @error "There is no font-weight defined for #{$size} in $font-weights map";
     }
 }
+
+@mixin font-size-margined($font-size, $margin-size, $position: default) {
+    font-size: ($font-size * 1rem);
+
+    @if $position == default {
+        margin: ($margin-size * 1em) 0;
+    } @else {
+        margin-#{$position}: ($margin-size * 1em);
+    }
+}

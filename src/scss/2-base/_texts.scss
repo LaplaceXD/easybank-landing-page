@@ -11,18 +11,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin: 0.5em 0;
+    @include font-size-margined(2.5, 0.5);
 }
 
 h2 {
-    font-size: 2rem;
-    margin: 0.5em 0;
+    @include font-size-margined(2, 0.5);
 }
 
 h3 {
-    font-size: 1.25rem;
-    margin: 1em 0;
+    @include font-size-margined(1.25, 1);
 }
 
 p {
