@@ -3,15 +3,15 @@ body {
 }
 
 .bg {
-    &-landing {
+    &--landing {
         background: url('../images/bg-intro-mobile.svg') no-repeat;
     }
 
-    &-benefits {
+    &--benefits {
         @include add-background(section, secondary);
     }
 
-    &-footer {
+    &--footer {
         @include add-background(footer);
     }
 }
