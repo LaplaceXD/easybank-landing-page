@@ -1,0 +1,12 @@
+.benefits {
+    @extend %container;
+    padding: 3em 0;
+}
+
+.benefits__subtitle {
+    margin-bottom: 1em;
+
+    br {
+        display: none;
+    }
+}
