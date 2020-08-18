@@ -34,13 +34,9 @@ $gradient-pallete: (
 }
 
 @mixin add-gradient($pallete, $direction: 45deg) {
-    @if variable-exists($pallete) {
-        @if (map-has-key($pallete, from)) and (map-has-key($pallete, to)) {
-            background: linear-gradient($direction, map-get($pallete, from), map-get($pallete, to));
-        } @else {
-            @error "#{$pallete} is not a two colored gradient-scheme, or keys are not named from and to.";
-        }
+    @if (map-has-key($pallete, from)) and (map-has-key($pallete, to)) {
+        background: linear-gradient($direction, map-get($pallete, from), map-get($pallete, to));
     } @else {
-        @error "There is no gradient-scheme called #{$pallete}.";
+        @error "#{$pallete} is not a two colored gradient-scheme, or keys are not named from and to.";
     }
 }
