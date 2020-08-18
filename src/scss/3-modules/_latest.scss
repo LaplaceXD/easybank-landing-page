@@ -1,5 +1,6 @@
 .latest {
     @include container(4em);
+    padding-bottom: 5em;
 }
 
 .latest__title {
