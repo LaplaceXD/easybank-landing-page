@@ -6,7 +6,10 @@
 .l-flex {
     &--nav {
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        @include flex-positioning(space-between);
+    }
+
+    &--landing {
+        @include flex-positioning;
     }
 }

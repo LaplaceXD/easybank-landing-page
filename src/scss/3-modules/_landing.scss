@@ -1,0 +1,18 @@
+.landing {
+    @extend %container;
+    margin-bottom: 4em;
+}
+
+.landing__img {
+    position: relative;
+    margin-top: -3.5em;
+    width: 19.5em;
+}
+
+.landing__btn {
+    margin-top: 2.5em;
+}
+
+.latest img {
+    width: 25%;
+}
