@@ -13,3 +13,10 @@ html {
 button {
     border: none;
 }
+
+header {
+    position: absolute;
+    width: 100vw;
+    background-color: white;
+    z-index: 1;
+}
