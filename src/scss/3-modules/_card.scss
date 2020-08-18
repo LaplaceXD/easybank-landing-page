@@ -22,6 +22,11 @@
 
 .card__title {
     @include font-size-margined(1.05, 0.6);
+    @include transition-ease;
+
+    &:hover {
+        color: $hover-color;
+    }
 }
 
 .card__summary {
