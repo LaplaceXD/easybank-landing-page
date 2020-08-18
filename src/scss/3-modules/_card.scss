@@ -1,0 +1,30 @@
+.card {
+    @include add-background(card);
+    text-align: left;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card__img {
+    max-width: 100%;
+    margin-top: -1em;
+}
+
+.card__content {
+    padding: 2em;
+    letter-spacing: -0.05em;
+}
+
+.card__author {
+    @include font-size-margined(0.7, 1.25, bottom);
+    color: $secondary-color;
+}
+
+.card__title {
+    @include font-size-margined(1.05, 0.6);
+}
+
+.card__summary {
+    @include font-size-margined(0.85, 0.5, bottom);
+    line-height: 1.5em;
+}
