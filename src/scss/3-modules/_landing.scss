@@ -1,5 +1,5 @@
 .landing {
-    @extend %container;
+    @include container;
     margin-bottom: 4em;
 }
 

@@ -1,6 +1,5 @@
 .benefits {
-    @extend %container;
-    padding: 3em 0;
+    @include container(3em);
 }
 
 .benefits__subtitle {

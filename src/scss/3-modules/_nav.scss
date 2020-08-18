@@ -1,6 +1,5 @@
 .nav {
-    @extend %container;
-    padding: 1.25em 0;
+    @include container(1.25em);
 }
 
 .nav__btn {

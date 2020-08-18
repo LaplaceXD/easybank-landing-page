@@ -4,8 +4,9 @@ $transition-duration: 500ms;
     transition: all $duration $delay ease;
 }
 
-%container {
+@mixin container($padding: 0) {
     width: 88%;
     max-width: 1000px;
     margin: 0 auto;
+    padding: $padding 0;
 }
