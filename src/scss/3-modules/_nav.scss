@@ -1,0 +1,12 @@
+.nav {
+    @extend %container;
+    padding: 1.25em 0;
+}
+
+.nav__btn {
+    display: none;
+}
+
+.nav__items {
+    display: none;
+}

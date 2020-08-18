@@ -1,0 +1,10 @@
+[class*=l-flex] {
+    display: flex;
+}
+
+.l-flex {
+    &--nav {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
