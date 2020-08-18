@@ -4,7 +4,7 @@
     "description": "FrontEndMentor Challenge",
     "main": "index.js",
     "scripts": {
-        "sass": "sass --watch ./src/scss/index.scss:./dist/css/main.css --style compressed",
+        "sass": "sass --watch ./src/scss/main.scss:./dist/css/main.css --style compressed",
         "prefix": "postcss ./dist/css/main.css --use autoprefixer -d ./dist/css/prefixed.css"
     },
     "author": "LaplaceXD",
