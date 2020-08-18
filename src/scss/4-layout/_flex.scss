@@ -1,9 +1,11 @@
 [class*=l-flex] {
     display: flex;
+    flex-direction: column;
 }
 
 .l-flex {
     &--nav {
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
