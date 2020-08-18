@@ -9,7 +9,7 @@ button {
     @include transition-ease;
 
     &:hover {
-        filter: contrast(180%) saturate(40%);
+        filter: brightness(150%);
     }
 
     &:active {
