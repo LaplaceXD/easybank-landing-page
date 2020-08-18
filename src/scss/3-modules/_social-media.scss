@@ -1,0 +1,17 @@
+.social-media {
+    & > img {
+        fill: white;
+        margin-bottom: 1.5em;
+    }
+}
+
+.social-media__icons {
+    list-style: none;
+    display: flex;
+    margin-left: -1em;
+}
+
+.social-media__icon {
+    width: 24px;
+    margin-left: 1em;
+}
