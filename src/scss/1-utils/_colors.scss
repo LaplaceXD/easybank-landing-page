@@ -1,17 +1,20 @@
 // Variables
-$primary-color: hsl(233, 26%, 24%);
+$primary-color: hsl(233, 27%, 24%);
 $secondary-color: hsl(233, 8%, 62%);
 $accent-color: hsl(0, 0%, 100%);
 $hover-color: hsl(136, 65%, 51%);
 
 $background-pallete: (
     card: (
-        default: hsl(0, 0%, 98%),
+        default: hsl(0, 0%, 100%),
     ),
     section: (
-        light: hsl(220, 16%, 96%),
-        dark: hsl(233, 8%, 62%),
+        default: hsl(0, 0%, 98%),
+        secondary: hsl(220, 16%, 96%),
     ),
+    footer: (
+        default: hsl(233, 27%, 24%)
+    )
 );
 
 $gradient-pallete: (
@@ -20,7 +23,7 @@ $gradient-pallete: (
 );
 
 // Mixins
-@mixin add-background($area, $color-type) {
+@mixin add-background($area, $color-type: default) {
     @if map-has-key($background-pallete, $area) {
         $color-pallete: map-get($background-pallete, $area);
         @if map-has-key($color-pallete, $color-type) {
