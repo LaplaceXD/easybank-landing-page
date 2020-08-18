@@ -14,4 +14,9 @@
 .social-media__icon {
     width: 24px;
     margin-left: 1em;
+    @include transition-ease;
+
+    &:hover {
+        filter: brightness(0) saturate(100%) invert(89%) sepia(99%) saturate(3962%) hue-rotate(59deg) brightness(87%) contrast(88%);
+    }
 }
