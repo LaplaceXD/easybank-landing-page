@@ -8,8 +8,8 @@ body {
         background: url('../images/bg-intro-mobile.svg') no-repeat top right;
         @include breakpoint(medium) {
             background: url('../images/bg-intro-desktop.svg') no-repeat center;
-            background-position-x: 50vw;
-            background-position-y: 40%;
+            background-position-x: 42vw;
+            background-position-y: 70%;
         }
     }
 
