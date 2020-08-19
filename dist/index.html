@@ -14,18 +14,26 @@
         <header>
             <nav class="l-flex--nav nav">
                 <img src="./images/logo.svg" alt="logo" />
-                <nav>
-                    <ul class="nav__items">
-                        <li class="nav__item"><a href="#">Home</a></li>
-                        <li class="nav__item"><a href="#">About</a></li>
-                        <li class="nav__item"><a href="#">Contact</a></li>
-                        <li class="nav__item"><a href="#">Blog</a></li>
-                        <li class="nav__item"><a href="#">Careers</a></li>
-                    </ul>
-                </nav>
+                <div class="tint js-tint"></div>
+                <ul class="nav__items js-container">
+                    <li class="nav__item js-item"><a href="#">Home</a></li>
+                    <li class="nav__item js-item"><a href="#">About</a></li>
+                    <li class="nav__item js-item"><a href="#">Contact</a></li>
+                    <li class="nav__item js-item"><a href="#">Blog</a></li>
+                    <li class="nav__item js-item"><a href="#">Careers</a></li>
+                </ul>
                 <button class="nav__btn">Request Invite</button>
-                <div class="hamburger">
-                    <img src="./images/icon-hamburger.svg" alt="icon-hamburger" class="hamburger__icon" />
+                <div class="hamburger js-hamburger">
+                    <img
+                        src="./images/icon-hamburger.svg"
+                        alt="icon-hamburger"
+                        class="hamburger__icon is-active js-hamburger-icon"
+                    />
+                    <img
+                        src="./images/icon-close.svg"
+                        alt="icon-hamburger"
+                        class="hamburger__close js-hamburger-close"
+                    />
                 </div>
             </nav>
         </header>
@@ -244,5 +252,7 @@
                 </div>
             </footer>
         </div>
+
+        <script src="./app.js" type="module"></script>
     </body>
 </html>
