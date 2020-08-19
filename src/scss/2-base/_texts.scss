@@ -3,6 +3,9 @@ body {
     font-size: $body-font-size;
     text-align: center;
     @include font-weight(medium);
+    @include breakpoint(large) {
+        text-align: left;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

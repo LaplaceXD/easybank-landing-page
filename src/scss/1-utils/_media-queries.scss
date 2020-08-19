@@ -15,3 +15,24 @@ $screen-size: (
         @error "There is no screen size defined for #{$size}.";
     }
 }
+
+@mixin breakpoint-display($size, $display: default) {
+    @if not(map-has-key($screen-size, $size)) {
+        @error "There is no screen size defined for #{$size}.";
+    }
+
+    @if $display == default {
+        display: none;
+        @include breakpoint($size) {
+            display: initial;
+            @content;
+        }
+    } @else if $display == none {
+        @include breakpoint($size) {
+            display: none;
+            @content;
+        }
+    } @else {
+        @error "There is no definition for #{$display}.";
+    }
+}

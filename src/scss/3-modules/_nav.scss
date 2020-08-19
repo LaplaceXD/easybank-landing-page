@@ -1,11 +1,24 @@
 .nav {
     @include container(1.25em);
+    @include breakpoint(large) {
+        padding: 1em;
+    }
 }
 
 .nav__btn {
-    display: none;
+    @include breakpoint-display(large) {
+
+    }
 }
 
 .nav__items {
-    display: none;
+    @include breakpoint-display(large) {
+        
+    }
+}
+
+.hamburger {
+    @include breakpoint-display(large, none) {
+        
+    }
 }

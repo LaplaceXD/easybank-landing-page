@@ -11,6 +11,6 @@
     @include grid-track-box(column);
 
     br {
-        display: none;
+        @include breakpoint-display(large);
     }
 }
