@@ -21,7 +21,7 @@ h6 {
 h1 {
     @include font-size-margined(2.5, 0.5);
     @include breakpoint(large) {
-        @include font-size-margined(3, 0.75);
+        font-size: 3rem;
     }
 }
 

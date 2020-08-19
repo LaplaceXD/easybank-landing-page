@@ -1,12 +1,44 @@
 .landing {
     @include container;
     padding-bottom: 4em;
+    @include breakpoint(medium) {
+        padding-bottom: 5em;
+        padding-top: 7.5em;
+    }
+}
+
+.landing__article {
+    @include breakpoint(large) {
+        width: 40%;
+    }
 }
 
 .landing__img {
     position: relative;
     margin-top: -3.5em;
     width: 19.5em;
+    @include breakpoint(medium) {
+        order: 1;
+        margin-left: 2em;
+        margin-top: -1em;
+        margin-right: -4em;
+        width: 25em;
+    }
+
+    &--mobile {
+        @include breakpoint(large) {
+            visibility: hidden;
+        }
+    }
+
+    &--desktop {
+        @include breakpoint-display(large) {
+            position: absolute;
+            top: -4.5em;
+            right: -2.5em;
+            width: auto;
+        }
+    }
 }
 
 .landing__btn {
