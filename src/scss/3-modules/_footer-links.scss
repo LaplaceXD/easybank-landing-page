@@ -3,8 +3,8 @@
     margin: 1.75em 0;
     display: grid;
     grid-gap: 1em;
-    grid-column: span 2;
-    @include breakpoint(large) {
+    @include breakpoint(medium) {
+        grid-column: span 2;
         grid-auto-flow: column;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
