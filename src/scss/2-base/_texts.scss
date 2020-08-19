@@ -8,17 +8,28 @@ body {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $primary-color;
     @include font-weight(medium);
 }
 
 h1 {
     @include font-size-margined(2.5, 0.5);
+    @include breakpoint(large) {
+        @include font-size-margined(3, 0.75);
+    }
 }
 
 h2 {
     @include font-size-margined(2, 0.5);
+    @include breakpoint(large) {
+        @include font-size-margined(2.4, 0);
+    }
 }
 
 h3 {
@@ -29,4 +40,7 @@ p {
     color: $secondary-color;
     font-size: 0.9rem;
     line-height: 1.75em;
+    @include breakpoint(large) {
+        font-size: 1.1rem;
+    }
 }

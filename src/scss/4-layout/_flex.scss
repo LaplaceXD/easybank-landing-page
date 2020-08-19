@@ -1,6 +1,9 @@
-[class*=l-flex] {
+[class*="l-flex"] {
     display: flex;
     flex-direction: column;
+    @include breakpoint(medium) {
+        flex-direction: row;
+    }
 }
 
 .l-flex {
@@ -11,6 +14,9 @@
 
     &--landing {
         @include flex-positioning;
+        @include breakpoint(large) {
+            @include flex-positioning(flex-start);
+        }
     }
 
     &--footer {
