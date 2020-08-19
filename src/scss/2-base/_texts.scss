@@ -34,6 +34,9 @@ h2 {
 
 h3 {
     @include font-size-margined(1.25, 1);
+    @include breakpoint(large) {
+        @include font-size-margined(1.6, 1.25);
+    }
 }
 
 p {

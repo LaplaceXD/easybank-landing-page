@@ -4,4 +4,13 @@
 
 .panel__img {
     margin-bottom: 0.25em;
+    @include breakpoint(large) {
+        margin-bottom: 0.5em;
+    }
+}
+
+.panel__paragraph {
+    @include breakpoint(large) {
+        font-size: 1rem;
+    }
 }

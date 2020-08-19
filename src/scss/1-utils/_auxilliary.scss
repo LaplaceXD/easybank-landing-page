@@ -4,7 +4,7 @@ $transition-duration: 500ms;
     transition: all $duration $delay ease;
 }
 
-$container-max-width: 1088px;
+$container-max-width: 1100px;
 
 @mixin grid-track-box($orientation: default, $start: 1, $end: -1) {
     @if $orientation == default {
