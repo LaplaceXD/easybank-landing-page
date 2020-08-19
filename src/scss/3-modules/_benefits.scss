@@ -4,6 +4,9 @@
 
 .benefits__title {
     @include grid-track-box(column);
+    @include breakpoint(large) {
+        
+    }
 }
 
 .benefits__subtitle {

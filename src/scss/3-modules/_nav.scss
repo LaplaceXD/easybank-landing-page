@@ -12,9 +12,7 @@
 }
 
 .nav__items {
-    @include breakpoint-display(large) {
-        
-    }
+    display: none;
 }
 
 .hamburger {
