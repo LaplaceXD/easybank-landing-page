@@ -1,17 +1,23 @@
 .benefits {
     @include container(3em);
+    @include breakpoint(large) {
+        padding: 5em 0 7.5em 0;
+    }
 }
 
 .benefits__title {
     @include grid-track-box(column);
     @include breakpoint(large) {
-        
+        margin-bottom: 0.1em;
     }
 }
 
 .benefits__subtitle {
     margin-bottom: 1em;
     @include grid-track-box(column);
+    @include breakpoint(large) {
+        margin-bottom: 2.5em;
+    }
 
     br {
         @include breakpoint-display(large);
