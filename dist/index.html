@@ -32,14 +32,25 @@
 
         <main>
             <div class="bg--landing">
+                <img
+                    src="./images/image-mockups.png"
+                    alt="image-mockups"
+                    class="landing__img landing__img--desktop"
+                />
                 <section class="l-flex--landing landing">
-                    <img src="./images/image-mockups.png" alt="image-mockups" class="landing__img" />
-                    <h1 class="landing__title">Next generation digital banking</h1>
-                    <p class="landing__paragraph">
-                        Take your financial life online. Your Easybank account will be a one-stop-shop for
-                        spending, saving, budgeting, investing, and much more.
-                    </p>
-                    <button class="landing__btn">Request Invite</button>
+                    <img
+                        src="./images/image-mockups.png"
+                        alt="image-mockups"
+                        class="landing__img landing__img--mobile"
+                    />
+                    <article class="landing__article">
+                        <h1 class="landing__title">Next generation digital banking</h1>
+                        <p class="landing__paragraph">
+                            Take your financial life online. Your Easybank account will be a one-stop-shop
+                            for spending, saving, budgeting, investing, and much more.
+                        </p>
+                        <button class="landing__btn">Request Invite</button>
+                    </article>
                 </section>
             </div>
 
@@ -53,24 +64,24 @@
                     </p>
 
                     <article class="panel">
-                        <img class="panel__img" src="./images/icon-online.svg" alt="Online Banking Icon" />
-                        <h3>Simple Budgeting</h3>
-                        <p>
-                            See exactly where your money goes each month. Receive notifications when you’re
-                            close to hitting your limits.
-                        </p>
-                    </article>
-
-                    <article class="panel">
                         <img
                             class="panel__img"
                             src="./images/icon-budgeting.svg"
                             alt="Online Banking Icon"
                         />
                         <h3>Online Banking</h3>
-                        <p>
+                        <p class="panel__paragraph">
                             Our modern web and mobile applications allow you to keep track of your finances
                             wherever you are in the world.
+                        </p>
+                    </article>
+
+                    <article class="panel">
+                        <img class="panel__img" src="./images/icon-online.svg" alt="Online Banking Icon" />
+                        <h3>Simple Budgeting</h3>
+                        <p class="panel__paragraph">
+                            See exactly where your money goes each month. Receive notifications when you’re
+                            close to hitting your limits.
                         </p>
                     </article>
 
@@ -81,7 +92,7 @@
                             alt="Online Banking Icon"
                         />
                         <h3>Fast Onboarding</h3>
-                        <p>
+                        <p class="panel__paragraph">
                             We don’t do branches. Open your account in minutes online and start taking
                             control of your finances right away.
                         </p>
@@ -90,7 +101,7 @@
                     <article class="panel">
                         <img class="panel__img" src="./images/icon-api.svg" alt="Online Banking Icon" />
                         <h3>Open API</h3>
-                        <p>
+                        <p class="panel__paragraph">
                             Manage your savings, investments, pension, and much more from one account.
                             Tracking your money has never been easier.
                         </p>
@@ -162,7 +173,7 @@
         </main>
 
         <div class="bg--footer">
-            <footer class="l-flex--footer">
+            <footer class="l-grid--footer footer">
                 <div class="social-media">
                     <img src="./images/logo-white.svg" alt="Logo" />
                     <ul class="social-media__icons">

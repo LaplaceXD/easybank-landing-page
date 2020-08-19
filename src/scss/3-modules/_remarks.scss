@@ -1,3 +1,17 @@
+.remarks {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-items: center;
+    @include breakpoint(large) {
+        align-items: flex-end;
+    }
+}
+
 .remarks__btn {
     margin: 0.5em 0 1.75em 0;
+}
+
+.remarks__copyright {
+    font-size: 0.9rem;
 }

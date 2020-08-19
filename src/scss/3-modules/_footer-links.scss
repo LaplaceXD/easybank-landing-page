@@ -3,8 +3,21 @@
     margin: 1.75em 0;
     display: grid;
     grid-gap: 1em;
+    grid-column: span 2;
+    @include breakpoint(large) {
+        grid-auto-flow: column;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include breakpoint(large) {
+        grid-column-gap: 6em;
+    }
 }
 
 .footer-links__link {
     font-size: 0.95rem;
+    @include breakpoint(large) {
+        font-size: 1rem;
+    }
 }

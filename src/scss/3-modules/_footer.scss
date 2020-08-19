@@ -1,3 +1,6 @@
 .footer { 
     @include container(2.25em);
+    @include breakpoint(medium) {
+        padding: 1.75em 0;
+    }
 }

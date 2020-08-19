@@ -19,8 +19,5 @@
         }
     }
 
-    &--footer {
-        @include flex-positioning(space-between);
-        padding: 2.25em 0;
-    }
+    
 }

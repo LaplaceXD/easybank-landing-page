@@ -1,6 +1,7 @@
-[class*=l-grid] {
-    $column-min-size: calculate-column-size($container-max-width, 1.25, 4);
-    $column-min-size-large: calculate-column-size($container-max-width, 1.75, 4);
+$column-min-size: calculate-column-size($container-max-width, 1.25, 4);
+$column-min-size-large: calculate-column-size($container-max-width, 1.75, 4);
+
+[class*="l-grid"] {
     display: grid;
     grid-gap: 1.25em;
     grid-template-columns: repeat(auto-fit, minmax($column-min-size, 1fr));
@@ -8,4 +9,14 @@
         grid-column-gap: 1.75em;
         grid-template-columns: repeat(auto-fit, minmax($column-min-size-large, 1fr));
     }
-}   
+}
+
+.l-grid--footer {
+    @include flex-positioning(space-between);
+    grid-template-columns: 1fr;
+    @include breakpoint(large) {
+        justify-items: flex-start;
+        grid-column-gap: 1.75em;
+        grid-template-columns: repeat(auto-fit, minmax($column-min-size-large, 1fr));
+    }
+}

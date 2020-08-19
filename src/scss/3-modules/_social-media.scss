@@ -1,20 +1,33 @@
 .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(large) {
+        align-items: flex-start;
+    }
     & > img {
         fill: white;
         margin-bottom: 1.5em;
+        @include breakpoint(medium) {
+            margin-bottom: 3.5em;
+        }
     }
 }
 
 .social-media__icons {
     list-style: none;
     display: flex;
-    margin-left: -1em;
+    margin-left: -0.5em;
 }
 
 .social-media__icon {
     width: 24px;
     margin-left: 1em;
     @include transition-ease;
+    @include breakpoint(large) {
+        width: 22px;
+        margin-left: 0.8em;
+    }
 
     &:hover {
         filter: brightness(0) saturate(100%) invert(89%) sepia(99%) saturate(3962%) hue-rotate(59deg) brightness(87%) contrast(88%);
