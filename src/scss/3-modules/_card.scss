@@ -6,13 +6,31 @@
 }
 
 .card__img {
+    object-fit: contain;
     max-width: 100%;
     margin-top: -1em;
+    
+    &--currency {
+        margin-top: -2.2em;
+    }
+    
+    @include breakpoint(large) {
+        width: 120%;
+        margin-top: 0;
+
+        &--currency {
+            margin-top: -1.2em;
+        }
+    }
 }
 
 .card__content {
     padding: 2em;
     letter-spacing: -0.05em;
+    @include breakpoint(large) {
+        padding: 1.25em;
+        letter-spacing: 0;
+    }
 }
 
 .card__author {
@@ -32,4 +50,7 @@
 .card__summary {
     @include font-size-margined(0.85, 0.5, bottom);
     line-height: 1.5em;
+    @include breakpoint(large) {
+        @include font-size-margined(0.75, 0, bottom);
+    }
 }

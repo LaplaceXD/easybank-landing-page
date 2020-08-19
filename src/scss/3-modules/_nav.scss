@@ -1,7 +1,7 @@
 .nav {
     @include container(1.25em);
     @include breakpoint(large) {
-        padding: 1em;
+        padding: 1em 0;
     }
 }
 

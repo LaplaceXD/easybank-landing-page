@@ -11,6 +11,6 @@
 
 .panel__paragraph {
     @include breakpoint(large) {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 }
