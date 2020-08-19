@@ -2,8 +2,13 @@
     @include container(3em);
 }
 
+.benefits__title {
+    @include grid-track-box(column);
+}
+
 .benefits__subtitle {
     margin-bottom: 1em;
+    @include grid-track-box(column);
 
     br {
         display: none;

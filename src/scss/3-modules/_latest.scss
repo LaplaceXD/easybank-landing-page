@@ -5,4 +5,5 @@
 
 .latest__title {
     margin-bottom: 0.25em;
+    @include grid-track-box(column);
 }

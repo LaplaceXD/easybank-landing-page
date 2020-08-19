@@ -1,4 +1,6 @@
 [class*=l-grid] {
+    $column-min-size: calculate-column-size($container-max-width, 1.25, 4);
     display: grid;
     grid-gap: 1.25em;
-}
+    grid-template-columns: repeat(auto-fit, minmax($column-min-size, 1fr));
+}   

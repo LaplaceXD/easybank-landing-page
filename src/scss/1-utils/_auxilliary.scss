@@ -4,9 +4,30 @@ $transition-duration: 500ms;
     transition: all $duration $delay ease;
 }
 
+$container-max-width: 1000px;
+
+@mixin grid-track-box($orientation: default, $start: 1, $end: -1) {
+    @if $orientation == default {
+        grid-row-start: $start;
+        grid-row-end: $end;
+        grid-column-start: $start;
+        grid-column-end: $end;
+    } @else {
+        grid-#{$orientation}-start: $start;
+        grid-#{$orientation}-end: $end;
+    }
+}
+
 @mixin container($padding: 0) {
     width: 88%;
-    max-width: 1000px;
+    max-width: $container-max-width;
     margin: 0 auto;
     padding: $padding 0;
+}
+
+@function calculate-column-size($max-width, $gap-size, $no-of-columns: 12) {
+    $converted-gap-size: $gap-size * $body-font-size;
+    $no-of-gaps: $no-of-columns - 1;
+
+    @return ($max-width - ($no-of-gaps * $converted-gap-size)) / $no-of-columns;
 }
