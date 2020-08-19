@@ -1,0 +1,40 @@
+.nav__item {
+    margin-bottom: 1.5em;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease;
+
+    &.is-active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    @include breakpoint(large) {
+        visibility: visible;
+        opacity: 1;
+        margin-bottom: 0;
+        margin-right: 1.5em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    & > a {
+        color: $primary-color;
+        @include font-weight(medium);
+        font-size: 1.2rem;
+
+        &:hover {
+            color: $hover-color;
+        }
+
+        @include breakpoint(large) {
+            color: $secondary-color;
+            font-size: 0.9rem;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}

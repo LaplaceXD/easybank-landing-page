@@ -1,0 +1,19 @@
+.tint {
+    position: absolute;
+    background: linear-gradient(to bottom, $primary-color, transparent);
+    visibility: hidden;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 65px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 500ms ease;
+
+    &.is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @include breakpoint-display(large, none);
+}

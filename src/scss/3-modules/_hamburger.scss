@@ -1,0 +1,12 @@
+.hamburger {
+    @include breakpoint-display(large, none);
+    
+    &__icon,
+    &__close {
+        display: none;
+
+        &.is-active {
+            display: initial;
+        }
+    }
+}

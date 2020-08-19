@@ -23,5 +23,16 @@ hamburger.addEventListener("click", async function () {
         navItemContainer.classList.remove("is-active");
         await new Promise((resolve) => setTimeout(resolve, 250));
         tint.classList.remove("is-active");
-    } navToggled = !navToggled;
+    }
+    navToggled = !navToggled;
 });
+
+const windowSize = window.innerWidth;
+
+if (windowSize >= 1280) {
+    hamburgerClose.classList.remove("is-active");
+    hamburgerIcon.classList.add("is-active");
+    navItems.forEach((navItem) => navItem.classList.remove("is-active"));
+    navItemContainer.classList.remove("is-active");
+    tint.classList.remove("is-active");
+}
