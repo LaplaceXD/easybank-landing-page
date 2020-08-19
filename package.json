@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "sass": "sass --watch ./src/scss/main.scss:./dist/css/main.css --style compressed",
-        "prefix": "postcss ./dist/css/main.css --use autoprefixer -d ./dist/css/prefixed.css"
+        "prefix": "postcss ./dist/css/main.css --use autoprefixer -d ./dist/css/"
     },
     "author": "LaplaceXD",
     "license": "MIT",
