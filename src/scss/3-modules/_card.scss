@@ -36,6 +36,9 @@
 .card__author {
     @include font-size-margined(0.7, 1.25, bottom);
     color: $secondary-color;
+    @include breakpoint(large) {
+        font-size: 0.6rem;
+    }
 }
 
 .card__title {
