@@ -1,0 +1,8 @@
+.attribution {
+    @include container(1em);
+    margin-top: -2em;
+    @include breakpoint(large) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
