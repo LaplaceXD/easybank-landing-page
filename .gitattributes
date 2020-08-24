@@ -2,3 +2,5 @@
 /dist/*.html linguist-vendored=false
 /dist/js/*.js linguist-vendored=false
 /dist/css/*.css linguist-vendored=false
+
+*.css linguist-detectable=false
